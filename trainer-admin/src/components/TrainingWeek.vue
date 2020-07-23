@@ -53,7 +53,7 @@
         width: 30px;
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
         margin-left: auto;
         margin-right: 35px;
     }
