@@ -80,6 +80,6 @@
         width: 30px;
         display: flex;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
     }
 </style>

@@ -55,7 +55,7 @@
 
 <style scoped>
     .addDay button{
-        width: 250px;
+        width: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
