@@ -12,7 +12,8 @@
             <trainingWeeks :trainingWeeks="trainingWeeks"
                             v-if="client.isTrainingPlan" />
             <div class="profile">
-                <profile :client="client" :wrapper1="false" :wrapper2="true" :key="client.id" class="profile"/>
+                <profile :class="{'dietProfile': !client.isTrainingPlan}"
+                    :client="client" :wrapper1="false" :wrapper2="true" :key="client.id" class="profile"/>
             </div>
         </main>   
 
@@ -21,7 +22,7 @@
               class="diet" 
               v-if="client.isDietPlan"/>
 
-        <button class="sendUser" @click="completeProgram"> <span>Отправить клиенту </span> </button>
+        <button class="sendClient" @click="completeProgram"> <span>Отправить клиенту </span> </button>
 
         <div class="comment">
             <p>Комментарий к программе:</p>        
@@ -360,8 +361,13 @@
 </script>
 
 <style scoped>
+     @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
     .header{
         display: flex;
+    }
+    .header h1{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
     }
     .button-back{
         margin: 10px 15px 10px 15px;
@@ -371,15 +377,17 @@
     }
     main{
         display: flex;
-        margin-bottom: 10vh;
     }
     .profile{
         margin-right: 10px;
     }
-    .sendUser{
+    .dietProfile{
+        margin-left: 90vw;
+    }
+    .sendClient{
         position: fixed;
         top: 40vh;
-        left: 87.5vw;
+        left: 89vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -392,7 +400,7 @@
         font-size: 20px;
         cursor: pointer;
     }
-    .sendUser:hover{
+    .sendClient:hover{
         transform: scale(1);
         background-color: #2044f5;
     }

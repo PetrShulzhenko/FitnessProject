@@ -1,5 +1,6 @@
 <template>
-    <div class="wrapper">
+    <div :class="{'dietWrapper': !client.isTrainingPlan,
+                   'wrapper': client.isTrainingPlan}">
         <p class="header">Программа питания:</p>
         <main>
             <div class="card main-card">
@@ -118,6 +119,10 @@
     .wrapper{
         width: 90%;        
         margin: 80px 0px;
+    }
+    .dietWrapper{
+        width: 90%;        
+        margin: -70px 0px 80px 0;
     }
     .header{
         font-size: 30px;

@@ -232,8 +232,11 @@ export default {
 </script>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
  .title{
    margin-left: 30px  ;
    font-size: 30px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
  }
 </style>

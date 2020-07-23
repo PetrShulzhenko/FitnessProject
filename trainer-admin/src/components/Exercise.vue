@@ -6,7 +6,7 @@
             <input v-model="exercise.reps" type="text" placeholder="Повторы" >
             <input v-model="exercise.PDO" type="text" placeholder="ПДО" >
             <input v-model="exercise.rest" type="text" placeholder="Отдых" >
-            <textarea  v-model="exercise.comment" type="text" placeholder="Коммент" ></textarea>
+            <textarea class="exercise-comment" v-model="exercise.comment" type="text" placeholder="Коммент" ></textarea>
             <input v-model="exercise.linkYouTube" type="text" placeholder="Ссылка" >
             <button class="delete"
                     @click="remove"> &times; </button>
@@ -41,7 +41,8 @@
     }
     .exercise input,textarea{
         width: 125px;
-        height: 25px;
+        min-height: 25px;
+        resize: vertical; 
         background-color: #fdfdfd;
         border-bottom: 2px solid rgb(238, 222, 166);
         border-right: 1px solid rgb(238, 227, 189);
@@ -54,7 +55,7 @@
         border-top: 1px solid rgb(238, 227, 189);
         border-right: 1px solid rgb(238, 227, 189);
         box-shadow: none;
-        height: 25px;
+        min-height: 25px;
     }
     .exercise textarea:focus{
         outline: none;
@@ -62,7 +63,10 @@
         border-top: 1px solid rgb(238, 227, 189);
         border-right: 1px solid rgb(238, 227, 189);
         box-shadow: none;
-        height: 25px;
+        min-height: 25px;
+    }
+    .exercise-comment{
+        width: 200px ;
     }
     .delete{
         color: #000;
