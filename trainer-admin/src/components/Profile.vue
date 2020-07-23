@@ -118,7 +118,7 @@
 .wrapper2{
     position: relative;
     top: -10vh;
-    left: -40vw;
+    left: -45vw;
 }
 .modal{
     position: fixed; 
