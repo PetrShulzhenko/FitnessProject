@@ -65,6 +65,7 @@
         },
         props: ["client", "comment"],
         methods: {
+          // eslint-disable-next-line vue/no-dupe-keys
             comment: function(){
                 this.commentStatus = !this.commentStatus;
                 this.rotation += 180;

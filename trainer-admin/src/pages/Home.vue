@@ -21,7 +21,7 @@ export default {
   },
   methods: {
     fetchData: function(){
-      axios.get('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+      axios.get('http://localhost:8080/fitness/get_all_subs')
         .then( res => this.clients = res.data)
         .catch(err => console.log(err));
     }
