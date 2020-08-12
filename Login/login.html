@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="../test/src/images/title-image.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Boreyko | online trainer</title>
+</head> 
+<body>
+    <header class="login-header">
+        <form action="../first-page/FirstPage.html">
+            <button class="arrow-back"><img src="../test/src/images/back-arrow.png" width="50px" alt=""></button>
+        </form>
+        <img src="../test/src/images/first-screen.png" class="login-header__logo" width="100px" alt="">
+        <form action="../registration/registration.html">
+            <button class="login-header__to-registration"> Регистрация</button>
+        </form>
+    </header>
+
+    <img src="../test/src/images/test-login.jpg"  alt="" class="login-screen-photo">
+
+    <section class="user-login user-login--login-page">
+
+        <form class="user-login__form" id="login-form" action="" method="POST">
+            <div class="user-login__type">
+                <div class="user-login__radio__labels">
+                    <label for="type-client">Спортсмен</label>
+                    <input type="radio" name="user-type" id="type-client" value="client" checked>
+                </div>
+
+                <div class="user-login__radio__labels">
+                    <label for="type-trainer">Тренер</label>
+                    <input type="radio" name="user-type" id="type-trainer" value="trainer">
+                </div>
+            </div>
+            <input class="user-login__input user-login__input--login" id="login" name="login" type="text" placeholder="Логин" required>  <br>
+            <input class="user-login__input user-login__input--password" id="password" name="password" type="password" placeholder="Пароль" required> <br>
+            <a class="user-login__forgotten-password" id="forgot-password" href="./Forgot-Password.html"> Забыли пароль? </a>
+            <button class="user-login__btn user-login__btn--login-page" type="submit" value="Submit">Войти</button>
+        </form>
+    </section>
+
+    <script src="login.js"> </script>
+    
+</body>
+</html>

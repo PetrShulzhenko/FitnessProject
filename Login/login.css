@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fdf6df;
+    margin: 0;
+}
+
+/*          NAV BAR    */
+.login-header{
+    display: flex;
+    justify-content: space-around ;
+    background-color: #333;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.arrow-back{
+    background-color: #333;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    }
+.arrow-back:hover{
+    transform: scale(1.1);
+}
+.login-header__logo{
+    margin-left: 6.5vw;
+    width: 80px;
+}
+.login-header__to-registration{
+    background-color:rgb(240, 218, 138);
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.05rem;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+.login-header__to-registration:hover{
+    background-color: rgb(236, 207, 100);
+    color: rgb(46, 45, 45);
+  }
+
+/*        SECTION LOGIN   */
+.login-screen-photo{
+    width: 100%;
+}
+
+.user-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-login--login-page{
+    width: 80%;
+    margin: 5vh 9% 0 11%;
+}
+.user-login__type{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.user-login__radio__labels{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.user-login__type label{
+    cursor: pointer;
+}
+.user-login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+}
+
+.user-login__input{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(160, 159, 159);
+    font-size: 1.3rem;
+    margin: 2vh 0 2vh 0;
+    text-align: center;
+    background-color: #fdf6df;
+}
+.user-login__input--login{
+    margin: 2vh 0 2vh 0;
+}
+.user-login__input--password{
+    margin: 2vh 0 0 0;
+}
+
+.user-login__forgotten-password{
+    color: #333;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 2vh;
+    font-size: 1.15rem;
+}
+.user-login__btn{
+    background-color:rgb(240, 218, 138);
+    border-radius: 10px;
+    border: 0;
+    font-size: 1.05rem;
+    padding: 10px 20px 10px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.user-login__btn--login-page{
+    width: 30vw;
+    margin: 2vh 0 2vh 5vw;
+}
+.user-login__btn:hover{
+    background-color: rgb(236, 207, 100);
+    color: rgb(46, 45, 45);
+}
