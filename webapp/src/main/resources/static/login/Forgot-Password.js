@@ -11,7 +11,7 @@ function forgotPassword(e) {
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 
     xhr.onload = function(){
-        if( JSON.parse(this.responseText) == true ) {
+        if( (this.status == 200) && (JSON.parse(this.responseText) == true) ) {
             alert("На ваш Email отправлено письмо :)");
         }
         else {

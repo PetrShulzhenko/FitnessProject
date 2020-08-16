@@ -4,12 +4,10 @@ function changePassword(e) {
     e.preventDefault();
 
     var password = document.getElementById("newPassword").value;
-    var str = window.location.search;
-    var login = str.replace("?email=", "");
-    var params = "newPassword=" + password + "&login=" + login;
+    var params = "newPassword=" + password; 
 
     var xhr = new XMLHttpRequest();
-    xhr.open('PUT', 'http://localhost:8080/reset_password', true);
+    xhr.open('POST', 'http://localhost:8080/reset_password', true);
     xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
 
     xhr.onload = function(){
